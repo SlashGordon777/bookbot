@@ -3,6 +3,7 @@ from stats import (
     chars_dict_to_sorted_list,
     get_chars_dict,
 )
+import sys
 
 
 def main():
