@@ -1,3 +1,6 @@
+from stats import get_num_words
+
+
 def sort_on(dict):
     return dict["count"]
 
@@ -19,7 +22,7 @@ def main():
 
         unique_letters_count_list.sort(reverse=True, key=sort_on)
 
-        words_count = (len(file_contents.split()))
+        words_count = get_num_words(file_contents)
 
         print("--- Begin report of books/frankenstein.txt --")
         print(f"{words_count} words found in the document")
